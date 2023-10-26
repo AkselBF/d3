@@ -1,8 +1,5 @@
 import { add, subtract, multiply, divide } from "../math.mjs";
 
-//import dotenv from "dotenv";
-//dotenv.config();
-
 function testAdd() {
   console.log('Testing add function...');
   if (add(1, 2) !== 3) {
