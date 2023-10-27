@@ -4,7 +4,7 @@ import { usdToEur, eurToUsd } from "../currency.mjs";
 import dotenv from "dotenv";
 dotenv.config();
 
-function testUsdToEur() {
+export function testUsdToEur() {
   console.log('Testing usdToEur function...');
   const usdAmount = 100;
   const expectedEurAmount = usdAmount * parseFloat(process.env.USD_TO_EUR_EXCHANGE_RATE);
@@ -13,7 +13,7 @@ function testUsdToEur() {
   }
 }
 
-function testEurToUsd() {
+export function testEurToUsd() {
   console.log('Testing eurToUsd function...');
   const eurAmount = 100;
   const expectedUsdAmount = eurAmount / parseFloat(process.env.USD_TO_EUR_EXCHANGE_RATE);
@@ -22,6 +22,7 @@ function testEurToUsd() {
   }
 }
 
+/*
 try {
   testUsdToEur();
   testEurToUsd();
@@ -29,6 +30,7 @@ try {
 } catch (error) {
   console.error('Currency conversion test failed:', error.message);
 }
+*/
 
 /*
 import dotenv from "dotenv";

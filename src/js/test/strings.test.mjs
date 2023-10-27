@@ -1,6 +1,6 @@
 import { reverse, capitalize } from "../strings.mjs";
 
-function testReverse() {
+export function testReverse() {
   console.log('Testing reverse function...');
   if (reverse('hello') !== 'olleh') {
     throw new Error('Reverse test failed: "hello" reversed should be "olleh"');
@@ -10,7 +10,7 @@ function testReverse() {
   }
 }
 
-function testCapitalize() {
+export function testCapitalize() {
   console.log('Testing capitalize function...');
   if (capitalize('hello') !== 'Hello') {
     throw new Error('Capitalize test failed: "hello" capitalized should be "Hello"');
@@ -20,6 +20,7 @@ function testCapitalize() {
   }
 }
 
+/*
 try {
   testReverse();
   testCapitalize();
@@ -27,3 +28,4 @@ try {
 } catch (error) {
   console.error('String test failed:', error.message);
 }
+*/

@@ -1,6 +1,6 @@
 import { add, subtract, multiply, divide } from "../math.mjs";
 
-function testAdd() {
+export function testAdd() {
   console.log('Testing add function...');
   if (add(1, 2) !== 3) {
     throw new Error('Addition test failed: 1 + 2 !== 3');
@@ -10,7 +10,7 @@ function testAdd() {
   }
 }
 
-function testSubtract() {
+export function testSubtract() {
   console.log('Testing subtract function...');
   if (subtract(3, 2) !== 1) {
     throw new Error('Subtraction test failed: 3 - 2 !== 1');
@@ -20,7 +20,7 @@ function testSubtract() {
   }
 }
 
-function testMultiply() {
+export function testMultiply() {
   console.log('Testing multiply function...');
   if (multiply(2, 3) !== 6) {
     throw new Error('Multiplication test failed: 2 * 3 !== 6');
@@ -30,7 +30,7 @@ function testMultiply() {
   }
 }
 
-function testDivide() {
+export function testDivide() {
   console.log('Testing divide function...');
   if (divide(6, 3) !== 2) {
     throw new Error('Division test failed: 6 / 3 !== 2');
@@ -45,6 +45,7 @@ function testDivide() {
   }
 }
 
+/*
 try {
   testAdd();
   testSubtract();
@@ -54,6 +55,7 @@ try {
 } catch (error) {
   console.error('Test failed:', error.message);
 }
+*/
 
 /*
 function testAdd() {
