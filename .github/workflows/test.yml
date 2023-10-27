@@ -3,6 +3,9 @@ name: Run Tests
 on:
   workflow_dispatch:
 
+env:
+  USD_TO_EUR_EXCHANGE_RATE: ${{secrets.USD_TO_EUR_EXCHANGE_RATE}}
+
 jobs:
   test:
     runs-on: ubuntu-latest
